@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp" >
+    <!-- android:textColor="#FF000000" -->
+
+ <ImageView
+     android:id="@+id/notificationImage"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:src="@drawable/img_3" />
+
+ <RelativeLayout
+     android:id="@+id/linearLayout3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/notificationImage"
+     android:layout_alignParentRight="true"
+     android:layout_alignTop="@+id/notificationImage"
+     android:layout_toRightOf="@+id/notificationImage" >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/notificationTitle"
+         android:layout_centerHorizontal="true"
+         android:text="计步："
+         android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/text_local"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/textView1"
+         android:layout_alignBottom="@+id/textView1"
+         android:layout_alignParentRight="true"
+         android:text="1"
+         android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/end_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:text="距离："
+         android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/textView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:text="1"
+         android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/notificationTitle"
+         android:layout_width="250dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_toLeftOf="@+id/textView1"
+         android:paddingLeft="26dp"
+         android:textColor="#FFFFFFFF"
+         android:textSize="18dp" />
+
+ </RelativeLayout>
+
+</RelativeLayout>
