@@ -1,0 +1,5 @@
+﻿XXX
+&1.2.2
+&1.2.2更新软件更新，更新内容：listview下拉刷新；
+解决背景上传失败问题。
+&http://115.159.26.120/androidapp/appupdate/frag2.apk

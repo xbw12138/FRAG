@@ -1,0 +1,18 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://xbwcc.com.cn/jquery.js"language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+window.onload=function(){
+	$.get("http://xbwcc.com.cn/androidapp/mysql/user/websearchuser.php?user_phone=17854259542",function (data){ 
+	var content = JSON.parse(data); 
+	alert(content.message);
+	});
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+
+

@@ -1,0 +1,34 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://xbwcc.com.cn/jquery.js"language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function get(){
+	$.getJSON("websearchuser.php?user_phone=17854259542",function (data){ 
+		//document.write("<center>");
+		document.write("昵称："+data.user_name);
+		document.write("<br>");
+		document.write("性别："+data.user_sex);
+		document.write("<br>");
+		document.write("签名："+data.user_sign);
+		document.write("<br>");
+		document.write("年龄："+data.user_age);
+		document.write("<br>");
+		document.write("学校："+data.user_schoolname);
+		document.write("<br>");
+		document.write("注册时间："+data.user_signtime);
+		document.write("<br>");
+		document.write("头像：");
+		document.write("<img src=\"");
+		document.write(data.user_image_head);
+		document.write("\">");
+		//document.write("</center>");
+	});
+}
+</script>
+</head>
+<body  onload="get()">
+</body>
+</html>
+
+
+

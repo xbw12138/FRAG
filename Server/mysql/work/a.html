@@ -1,0 +1,21 @@
+<script type="text/template" id="template">
+<div class='message' id='message'>第 {{message}} 位用户: <span>{{start_time}}</span><p><a href='./{{end_time}}' title='点击查看原图'><img src='./{{work_describe}}'></a></p><br>{{work_position}}</div>
+</script>
+<script>
+(function($) {
+	var template = $('#template').html();
+	function get_data() {
+		$.ajax({
+			url: 'http://xbwcc.com.cn/androidapp/mysql/work/websearchwork.php?user_phone=17854259542',
+			dataType: 'json',
+			success: function(data) {
+				for(var i = 0; i < data.length; ++i) {
+					var tmp = data[i];
+					// 循环输出，用变量替换template中的{{变量}}
+				}
+			}
+		});
+	}
+	get_data();
+})(jQuery);
+</script>
